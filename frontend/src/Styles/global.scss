@@ -1,0 +1,16 @@
+@import './variables';
+
+body {
+  background-color: $background-light;
+  color: $text-light;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme {
+  background-color: $background-dark;
+  color: $text-dark;
+  
+}
+
+
+

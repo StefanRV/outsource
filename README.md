@@ -15,7 +15,7 @@ EMAIL=your-email-for-node-mailer
 PASSWORD=your-application-password-for-node-mailer
 RECAPTCHA_SECRET_KEY=your-recaptcha-secret-key
 ```
-5. Before launching the project, open terminal in backend directory (if you are using VS code, click on backend folder with right mouse button and press "Open in integrated terminal". In case you are using something else, you can open it in your terminal maually with ```cd 'your_path_to_backend_directory' ```) and run ```npm install``` comand. Do the same for frontend directory.
+5. Before launching the project, open terminal in backend directory (if you are using **VS code**, click on backend folder with right mouse button and press "Open in integrated terminal". In case you are using something else, you can open it in your terminal maually with ```cd 'your_path_to_backend_directory' ```) and run ```npm install``` comand. Do the same for frontend directory.
 6. Run ```node config/createTables.js``` command in backend directory to create tables with test data in your database;
 7. In backend directory terminal start backend server with ```node index.js``` command;
 7 .In frontend directory terminal start frontend server with ```npm start``` command;

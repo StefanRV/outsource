@@ -3,6 +3,122 @@
 
 This is an outsourcing platform that allows people to showcase their work, which others can purchase. The platform also includes a forum where users can ask for help from one another or simply exchange experiences on various topics.
 
+Project creators:
+- Mark Baranjuk
+- Stefan Robalko
+- Nikita Tsistokletov
+
+## Main Modules of the OutLands Project
+1. Authentication and Registration Module
+
+Files: authController.js, verifyROLE.js, verifySIGN_UP.js
+Functions:
+- Registering new users with data validation.
+- Authenticating users with encrypted password storage.
+- Logging out users (logout).
+- Verifying roles (guest, user, admin) to restrict access.
+- Redirecting to the appropriate page after login/registration.
+
+
+
+2. User Management Module
+
+Files: userController.js, user.js
+Functions:
+- Creating and registering new user accounts.
+- Editing personal user information (name, email, password).
+- Deleting user accounts (for admins).
+- Viewing the list of all users (for admins).
+- Managing user profiles in the personal account.
+
+
+
+3. Marketplace Module
+
+Files: productController.js, product.js
+Functions:
+- Publishing new products (design works: textures, 3D models).
+- Viewing the product list with category filtering.
+- Editing and deleting existing products.
+- Allowing guests to view products without purchasing capability.
+- Searching products by keywords.
+
+
+
+4. Orders Module
+
+Files: orderController.js, order.js, orderItem.js
+Functions:
+- Creating new purchase orders for products.
+- Viewing order history in the personal account.
+- Managing orders (confirmation, cancellation) by admins.
+- Displaying order details (products, cost).
+
+
+
+5. Chats and Messages Module
+
+Files: chatController.js, messageController.js, chat.js, message.js
+Functions:
+- Creating new chats between users.
+- Sending and receiving personal messages.
+- Viewing chat message history.
+- Managing the list of active chats.
+
+
+
+6. Forum Module
+
+Files: forumCategoryController.js, forumPostController.js, topicController.js, forumCategory.js, forumPost.js, topic.js, postVote.js
+Functions:
+- Creating and viewing forum topics.
+- Managing forum categories (creation, editing).
+- Posting and commenting in forum topics.
+- Voting on posts (likes/dislikes).
+- Allowing guests to view the forum without participation.
+
+
+
+7. Categories Module
+
+Files: categoryController.js, category.js
+Functions:
+- Creating new categories for products and forum.
+- Editing and deleting existing categories.
+- Filtering products and forum topics by categories.
+
+
+
+8. Admin Panel Module
+
+Files: userController.js, productController.js, orderController.js, messageController.js
+Functions:
+- Monitoring user activity and content.
+- Moderating products, orders, and messages.
+- Editing and deleting data (users, products, orders).
+- Managing user roles and access.
+
+
+
+9. Navigation Module
+
+Files: React Router (Frontend)
+Functions:
+- Navigating between pages (home, profile, marketplace, forum, chats).
+- Restricting page access based on user role.
+- Displaying relevant navigation buttons (Profile, Purchases, Messages, Logout).
+
+
+
+10. Balance Management Module
+
+Files: (not explicitly specified, implemented in userController.js)
+Functions:
+- Adding funds to the user’s balance for purchases.
+- Displaying the current balance in the personal account.
+- Managing transactions related to orders.
+
+
 
 
 
@@ -31,7 +147,6 @@ node -v  # Should show v22.x or higher
 Download and install:
 
 - [XAMPP](https://www.apachefriends.org/index.html)
-- OR
 - [WAMP](https://www.wampserver.com/en/)
 
 ### Launch Services

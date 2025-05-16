@@ -1,0 +1,76 @@
+// Theme Variables
+$light-theme: (
+  background: #ffffff,
+  text: #343a40,
+  border: #ced4da,
+  primary: #4a4a4a,
+  primary-hover: #3a3a3a,
+  secondary: #6c757d,
+  secondary-hover: #5a6268,
+
+  success: #6c757d,
+  success-bg: #ebedef,
+  danger: #868e96,
+  danger-bg: #e6e8eb,
+  muted: #868e96,
+  card-bg: #ffffff,
+  shadow: rgba(0, 0, 0, 0.15),
+  button-bg: #1e1e1e,
+  button-text: #ffffff,
+  button-border: #ced4da,
+  button-hover-bg: #757575,
+  accent: #babfc5,
+  accent-hover: #babfc5,
+
+  message-container: #eaeaea,
+  message-bg: #dddbdb,
+  message-text: #3f3e3e,
+  message-received: #babfc5,
+  message-received-text: #333,
+
+  modal-bg: #ffffff,
+  modal-header-bg: #ffffff,
+  modal-placeholder: #868e96,
+  modal-close-icon: #343a40,
+  // Новый ключ для фона модального окна
+  modal-backdrop: rgba(0, 0, 0, 0.5),
+);
+
+$dark-theme: (
+  background: #1e1e1e,
+  text: #f5f5f5,
+  border: #fff0f0,
+  primary: #e3e3e3,
+  primary-hover: #000000,
+  secondary: #adb5bd,
+  secondary-hover: #ced4da,
+
+  success: #1e1e1e,
+  success-bg: #e3e3e3,
+
+  danger: #868e96,
+  danger-bg: #495057,
+
+  muted: #e3e3e3,
+  card-bg: #2c2c2c,
+  shadow: rgba(0, 0, 0, 0.4),
+  button-bg: #ffffff,
+  button-text: #1e1e1e,
+  button-border: #868e96,
+  button-hover-bg: #757575,
+  accent: #babfc5,
+  accent-hover: #babfc5,
+
+  message-container: #575656,
+  message-text: #3a3a3a,
+  message-bg: #a4a3a3,
+  message-received-text: #fcfcfc,
+  message-received: #838383,
+
+  modal-bg: #1e1e1e,
+  modal-header-bg: #2c2c2c,
+  modal-placeholder: #ffffff,
+  modal-close-icon: #ffffff,
+  // Новый ключ для фона модального окна
+  modal-backdrop: rgb(0, 0, 0),
+);

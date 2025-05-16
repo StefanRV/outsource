@@ -1,0 +1,19 @@
+@mixin button($bg, $text, $border, $hover-bg, $hover-text, $hover-border) {
+    background-color: $bg;
+    color: $text;
+    border: 1px solid $border;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: $hover-bg;
+      color: $hover-text;
+      border-color: $hover-border;
+    }
+  }
+  
+  @mixin card($bg, $border, $shadow) {
+    background-color: $bg;
+    border: 1px solid $border;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px $shadow;
+    padding: 15px;
+  }

@@ -1,0 +1,63 @@
+@import "../variables";
+@import "../mixins";
+
+.container {
+  background-color: var(--background);
+  color: var(--text);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  @include card(var(--card-bg), var(--border), var(--shadow));
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.paginationWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.pageBtn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--button-border);
+  border-radius: 4px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: var(--button-hover-bg);
+  }
+
+  &.active {
+    background-color: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+  }
+}
+
+.navBtn {
+  background: none;
+  border: none;
+  color: var(--button-text);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0 10px;
+
+  &:disabled {
+    color: var(--muted);
+    cursor: not-allowed;
+  }
+}
